@@ -88,11 +88,11 @@ def setMotorMode(mode):
    if mode == "reverse":
       # Motor 1
       io.output(motor_in1_pin, True)
-      io.output(motor_in2_pin, False)
+      io.output(motor_in2_pin, True)
    elif  mode == "forward":
       # Motor 1
       io.output(motor_in1_pin, False)
-      io.output(motor_in2_pin, True)
+      io.output(motor_in2_pin, False)
    # Stoppen der beiden Motoren
    else:
       io.output(motor_in1_pin, False)
